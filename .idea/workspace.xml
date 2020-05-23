@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="465cc499-89fe-4dd4-ba5e-ad1338b5fc4b" name="Default Changelist" comment="" />
+    <list default="true" id="465cc499-89fe-4dd4-ba5e-ad1338b5fc4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api/handlers/goodbye.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/handlers/goodbye.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api/handlers/products.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/handlers/products.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +25,13 @@
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\steven\go\src\TestMS\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="25b2m4ys" />
@@ -98,38 +110,42 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="558" y="134" key="Github.UntrackedFilesDialog/0.0.1440.860@0.0.1440.860" timestamp="1590240803025" />
-    <state width="1396" height="322" key="GridCell.Tab.0.bottom" timestamp="1590235911217">
+    <state width="1396" height="147" key="GridCell.Tab.0.bottom" timestamp="1590245033821">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590235911217" />
-    <state width="1396" height="322" key="GridCell.Tab.0.center" timestamp="1590235911217">
+    <state width="1396" height="147" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
+    <state width="1396" height="147" key="GridCell.Tab.0.center" timestamp="1590245033821">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590235911217" />
-    <state width="1396" height="322" key="GridCell.Tab.0.left" timestamp="1590235911217">
+    <state width="1396" height="147" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
+    <state width="1396" height="147" key="GridCell.Tab.0.left" timestamp="1590245033821">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590235911217" />
-    <state width="1396" height="322" key="GridCell.Tab.0.right" timestamp="1590235911217">
+    <state width="1396" height="147" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
+    <state width="1396" height="147" key="GridCell.Tab.0.right" timestamp="1590245033821">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590235911217" />
-    <state width="1396" height="322" key="GridCell.Tab.1.bottom" timestamp="1590235911218">
+    <state width="1396" height="147" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
+    <state width="1396" height="147" key="GridCell.Tab.1.bottom" timestamp="1590245033822">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590235911218" />
-    <state width="1396" height="322" key="GridCell.Tab.1.center" timestamp="1590235911218">
+    <state width="1396" height="147" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590245033822" />
+    <state width="1396" height="147" key="GridCell.Tab.1.center" timestamp="1590245033822">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590235911218" />
-    <state width="1396" height="322" key="GridCell.Tab.1.left" timestamp="1590235911218">
+    <state width="1396" height="147" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590245033822" />
+    <state width="1396" height="147" key="GridCell.Tab.1.left" timestamp="1590245033821">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590235911218" />
-    <state width="1396" height="322" key="GridCell.Tab.1.right" timestamp="1590235911218">
+    <state width="1396" height="147" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
+    <state width="1396" height="147" key="GridCell.Tab.1.right" timestamp="1590245033822">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="322" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590235911218" />
+    <state width="1396" height="147" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590245033822" />
+    <state x="312" y="162" key="Vcs.Push.Dialog.v2" timestamp="1590241673865">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="312" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1590241673865" />
     <state x="433" y="220" key="git4idea.merge.GitPullDialog" timestamp="1590240843425">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -140,17 +156,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/product-api/handlers/products.go</url>
-          <line>80</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/product-api/handlers/products.go</url>
-          <line>73</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/product-api/handlers/products.go</url>
-          <line>53</line>
+          <line>22</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

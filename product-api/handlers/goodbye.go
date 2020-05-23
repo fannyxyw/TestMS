@@ -17,5 +17,3 @@ func (g *Goodbye) ServeHTTP(rw http.ResponseWriter, w * http.Request)  {
 	g.l.Println("goodbye")
 	rw.Write([] byte("byeee\n"))
 }
-
-
