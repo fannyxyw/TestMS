@@ -4,6 +4,7 @@ import (
 	"TestMS/product-api/handlers"
 	"context"
 	"fmt"
+	gohandlers "github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
@@ -18,7 +19,7 @@ func main()  {
 	ph := handlers.NewProducts(l)
 	sm := mux.NewRouter()
 	getRouter := sm.Methods(http.MethodGet).Subrouter()
-	getRouter.HandleFunc("/", ph.GetProducts)
+	getRouter.HandleFunc("/products", ph.GetProducts)
 	putRouter := sm.Methods(http.MethodPut).Subrouter()
 	putRouter.HandleFunc("/{id:[0-9]+}", ph.UpdateProduct)
 	putRouter.Use(ph.MiddlewarValidProduct)
@@ -26,9 +27,11 @@ func main()  {
 	postRouter.HandleFunc("/", ph.AddProduct)
 	postRouter.Use(ph.MiddlewarValidProduct)
 
+	ch := gohandlers.CORS(gohandlers.AllowedOrigins([]string{"http://192.168.73.152:3000", "http://192.168.73.152:3001"}))
+
 	server := http.Server{
-		Addr:              ":8080",
-		Handler:           sm,
+		Addr:              ":9090",
+		Handler:           ch(sm),
 		TLSConfig:         nil,
 		ReadTimeout:       1 * time.Second,
 		ReadHeaderTimeout: 1 * time.Second,

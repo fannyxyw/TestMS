@@ -1,3 +1,14 @@
+// Package classification of Product API
+//
+// Documentation for Product API
+//
+// Schemes: http
+// BasePath: /
+// Version: 1.0.1
+//
+// Consumes:
+// - application
+
 package handlers
 
 import (
@@ -18,7 +29,6 @@ func NewProducts(l *log.Logger) *Products  {
 }
 
 func (p *Products) GetProducts(rw http.ResponseWriter, r *http.Request)  {
-	p.l.Println("Handle get method")
 	lp := data.GetProducts()
 	err := lp.ToJSON(rw)
 	if err != nil {
@@ -28,7 +38,6 @@ func (p *Products) GetProducts(rw http.ResponseWriter, r *http.Request)  {
 }
 
 func (p *Products) AddProduct(rw http.ResponseWriter, r *http.Request)  {
-	// TODO(shidf): understand
 	prod := r.Context().Value(KeyProduct{}).(data.Product)
 	data.AddPoduct(&prod)
 }
@@ -41,7 +50,6 @@ func (p *Products) UpdateProduct(rw http.ResponseWriter, r* http.Request)  {
 		return
 	}
 
-	// TODO(shidf): understand
 	prod := r.Context().Value(KeyProduct{}).(data.Product)
 	err = data.UpdatePoduct(id, &prod)
 	if err == data.ErrProductNotFound {
@@ -59,16 +67,15 @@ type KeyProduct struct {}
 
 func (p *Products)MiddlewarValidProduct(next http.Handler) http.Handler  {
 	return http.HandlerFunc(func(rw http.ResponseWriter, r* http.Request) {
-			prod := data.Product{}
-			err := prod.FromJSON(r.Body)
-			if err != nil {
-				http.Error(rw, "Unable to unmarshal json", http.StatusBadRequest);
-				return
-			}
+		prod := data.Product{}
+		err := prod.FromJSON(r.Body)
+		if err != nil {
+			http.Error(rw, "Unable to unmarshal json", http.StatusBadRequest);
+			return
+		}
 
-			// TODO(shidf): understand
-			ctx := context.WithValue(r.Context(), KeyProduct{}, prod)
-			req := r.WithContext(ctx)
-			next.ServeHTTP(rw, req)
+		ctx := context.WithValue(r.Context(), KeyProduct{}, prod)
+		req := r.WithContext(ctx)
+		next.ServeHTTP(rw, req)
 	})
 }

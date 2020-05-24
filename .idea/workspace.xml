@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="465cc499-89fe-4dd4-ba5e-ad1338b5fc4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-api/data/product_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-api/handlers/goodbye.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/handlers/goodbye.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api/data/products.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/data/products.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api/handlers/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/handlers/hello.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-api/handlers/products.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/handlers/products.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +49,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -58,7 +64,16 @@
       <recent name="C:\Users\steven\go\src\TestMS\product-api" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="TestMS" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/product-images/main.go" />
+      <package value="TestMS" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="TestMS" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -68,8 +83,32 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestCheckValidation in TestMS/product-api/data" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="TestMS" />
+      <working_directory value="$PROJECT_DIR$/product-api/data" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="TestMS/product-api/data" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestCheckValidation$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="product_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="TestMS" />
+      <working_directory value="$PROJECT_DIR$/product-api/data" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="TestMS" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/product-api/data/product_test.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Test.product_test.go" />
+        <item itemvalue="Go Test.TestCheckValidation in TestMS/product-api/data" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -110,56 +149,56 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="558" y="134" key="Github.UntrackedFilesDialog/0.0.1440.860@0.0.1440.860" timestamp="1590240803025" />
-    <state width="1396" height="147" key="GridCell.Tab.0.bottom" timestamp="1590245033821">
+    <state width="1380" height="230" key="GridCell.Tab.0.bottom" timestamp="1590326055186">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
-    <state width="1396" height="147" key="GridCell.Tab.0.center" timestamp="1590245033821">
+    <state width="1380" height="230" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590326055186" />
+    <state width="1380" height="230" key="GridCell.Tab.0.center" timestamp="1590326055186">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
-    <state width="1396" height="147" key="GridCell.Tab.0.left" timestamp="1590245033821">
+    <state width="1380" height="230" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590326055186" />
+    <state width="1380" height="230" key="GridCell.Tab.0.left" timestamp="1590326055185">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
-    <state width="1396" height="147" key="GridCell.Tab.0.right" timestamp="1590245033821">
+    <state width="1380" height="230" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590326055185" />
+    <state width="1380" height="230" key="GridCell.Tab.0.right" timestamp="1590326055186">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
-    <state width="1396" height="147" key="GridCell.Tab.1.bottom" timestamp="1590245033822">
+    <state width="1380" height="230" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590326055186" />
+    <state width="1396" height="147" key="GridCell.Tab.1.bottom" timestamp="1590246470451">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590245033822" />
-    <state width="1396" height="147" key="GridCell.Tab.1.center" timestamp="1590245033822">
+    <state width="1396" height="147" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590246470451" />
+    <state width="1396" height="147" key="GridCell.Tab.1.center" timestamp="1590246470451">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590245033822" />
-    <state width="1396" height="147" key="GridCell.Tab.1.left" timestamp="1590245033821">
+    <state width="1396" height="147" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590246470451" />
+    <state width="1396" height="147" key="GridCell.Tab.1.left" timestamp="1590246470450">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590245033821" />
-    <state width="1396" height="147" key="GridCell.Tab.1.right" timestamp="1590245033822">
+    <state width="1396" height="147" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590246470450" />
+    <state width="1396" height="147" key="GridCell.Tab.1.right" timestamp="1590246470451">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="147" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590245033822" />
-    <state x="312" y="162" key="Vcs.Push.Dialog.v2" timestamp="1590241673865">
+    <state width="1396" height="147" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590246470451" />
+    <state x="221" y="61" key="SettingsEditor" timestamp="1590246468832">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1590241673865" />
+    <state x="221" y="61" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1590246468832" />
+    <state x="312" y="162" key="Vcs.Push.Dialog.v2" timestamp="1590246043576">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="312" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1590246043576" />
+    <state x="300" y="84" key="editAsTableFormatDialogDimension" timestamp="1590246369253">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="300" y="84" key="editAsTableFormatDialogDimension/0.0.1440.860@0.0.1440.860" timestamp="1590246369253" />
     <state x="433" y="220" key="git4idea.merge.GitPullDialog" timestamp="1590240843425">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="433" y="220" key="git4idea.merge.GitPullDialog/0.0.1440.860@0.0.1440.860" timestamp="1590240843425" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/product-api/handlers/products.go</url>
-          <line>22</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TestMS$TestCheckValidation_in_TestMS_product_api_data.out" NAME="TestCheckValidation in TestMS/product-api/data Coverage Results" MODIFIED="1590305811796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
