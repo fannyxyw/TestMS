@@ -41,6 +41,17 @@ func GetProducts() Products  {
 	return prodctList
 }
 
+func GetProductByID(id int) (*Product, error)  {
+	for i, p := range prodctList{
+		if p.ID == id {
+			np := *prodctList[i]
+			return  &np, nil
+		}
+	}
+
+	return  nil, ErrProductNotFound
+}
+
 func AddPoduct(p *Product)  {
 	p.ID = getNextID()
 	prodctList = append(prodctList, p)

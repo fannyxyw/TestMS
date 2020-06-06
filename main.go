@@ -1,6 +1,7 @@
 package main
 
 import (
+	protos "TestMS/CURRENCY/protos/currency"
 	"TestMS/product-api/handlers"
 	"context"
 	"fmt"
@@ -10,6 +11,8 @@ import (
 	"os/signal"
 	"time"
 
+	"google.golang.org/grpc"
+
 	gohandlers "github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
@@ -17,10 +20,17 @@ import (
 func main() {
 	log.Println("http server running")
 	l := log.New(os.Stdout, "product", log.LstdFlags)
-	ph := handlers.NewProducts(l)
+	conn, err := grpc.Dial("127.0.0.1:9092", grpc.WithInsecure())
+	if err != nil {
+		panic(err)
+	}
+	defer conn.Close()
+	cc := protos.NewCurrencyClient(conn)
+	ph := handlers.NewProducts(l, cc)
 	sm := mux.NewRouter()
 	getRouter := sm.Methods(http.MethodGet).Subrouter()
 	getRouter.HandleFunc("/products", ph.GetProducts)
+	getRouter.HandleFunc("/products/{id:[0-9]+}", ph.ListSingle)
 	putRouter := sm.Methods(http.MethodPut).Subrouter()
 	putRouter.HandleFunc("/{id:[0-9]+}", ph.UpdateProduct)
 	putRouter.Use(ph.MiddlewarValidProduct)
@@ -28,7 +38,7 @@ func main() {
 	postRouter.HandleFunc("/", ph.AddProduct)
 	postRouter.Use(ph.MiddlewarValidProduct)
 
-	ch := gohandlers.CORS(gohandlers.AllowedOrigins([]string{"http://192.168.73.152:3000", "http://192.168.73.152:3001"}))
+	ch := gohandlers.CORS(gohandlers.AllowedOrigins([]string{"http://192.168.239.128:3000", "http://192.168.239.128:3001"}))
 
 	server := http.Server{
 		Addr:              ":9090",
