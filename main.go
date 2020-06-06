@@ -4,16 +4,17 @@ import (
 	"TestMS/product-api/handlers"
 	"context"
 	"fmt"
-	gohandlers "github.com/gorilla/handlers"
-	"github.com/gorilla/mux"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"time"
+
+	gohandlers "github.com/gorilla/handlers"
+	"github.com/gorilla/mux"
 )
 
-func main()  {
+func main() {
 	log.Println("http server running")
 	l := log.New(os.Stdout, "product", log.LstdFlags)
 	ph := handlers.NewProducts(l)
@@ -39,7 +40,6 @@ func main()  {
 		IdleTimeout:       5 * time.Second,
 	}
 
-
 	go func() {
 		err := server.ListenAndServe()
 		if err != nil {
@@ -51,10 +51,10 @@ func main()  {
 	signal.Notify(sigChan, os.Interrupt)
 	signal.Notify(sigChan, os.Kill)
 
-	sig := <- sigChan
+	sig := <-sigChan
 	l.Println("Receive terminate, graceful shutdown", sig)
 
-	tc, _ := context.WithTimeout(context.Background(), 3 * time.Second)
+	tc, _ := context.WithTimeout(context.Background(), 3*time.Second)
 	server.Shutdown(tc)
 
 	fmt.Println("sdf")
